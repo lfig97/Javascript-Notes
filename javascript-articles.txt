@@ -1,0 +1,74 @@
+
+Keyword	    Scope	    Hoisting	    Can Be Reassigned	    Can Be Redeclared
+var	    Function scope	Yes	            Yes	                    Yes
+let	    Block scope	    No	            Yes	                    No
+const	Block scope	    No	            No	                    No
+
+Hoisting: A behavior of JavaScript in which variable and function declarations are moved to the top of their scope.
+Hoisting doesn't occur with let and const
+
+Can re-assign properties of an object
+
+Type Conversion
+"15" - "10"; outputs 5 and same for all other operators except '+' which is concat
+String() turns whatever is in it to string type and .toString() as well
+There is also Number(), and Boolean()
+
+Objects are like Java Hashmaps
+You can retrieve properties from object using . or []
+Remove object properties using 'delete'
+to loop through objects ex:
+for (let key in gimli) {
+    console.log(gimli[key]);
+  }
+Object.keys returns array of all keys
+
+Events
+use removeEventListener to take a way a specific event
+
+JSON
+JavaScript Object Notation
+used to share data
+the files looks like javascript objects
+
+Classes
+classes are functions
+use call method to use parent constructor, similar to using super() in Java
+
+Destructuring, Rest Parameters, and Spread Syntax
+Destructuring is assigning object and array elements to variables with one line of code
+ex: const arr = {bacon, turkey, chicken};
+const {meat1,meat2,meat3} = arr;
+Spread syntax makes it easier to do stuff with arrays using '...'
+ex: const arr = {1,2,3};
+const arrCopy = {...arr};
+Rest parameters is using '...' to create an array of an infinite amount of elements
+
+Arrow functions
+short-hand function
+const functionName = (parameters) =>{
+    code body
+}
+
+Event Loop, Callbacks, Promises, and Async/Await
+Event loop manages the queue and call stack making sure program continues to run and execute
+Call back functions are functions that call others and useful when wanting functions to execute after others
+Promise: It is an object that might return a value in the future.
+A promise can have three possible states: pending, fulfilled, and rejected.
+
+Pending - Initial state before being resolved or rejected
+Fulfilled - Successful operation, promise has resolved
+Rejected - Failed operation, promise has rejected
+returns a value if its code does work and if it doesn't
+
+Async functions return a promise
+An async function allows you to handle asynchronous code in a manner that appears synchronous.
+Await keyword is used to keep something from executing before another line of code
+
+Iteration Methods
+map() creates a new array on whatever arr it's called on
+filter() is like sort which returns elements of an array that fit a specific criteria
+reduce() shortens an array to a single value
+find() is like .contains
+findIndex() returns the index of an element in an array
+
